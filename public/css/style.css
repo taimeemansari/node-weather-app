@@ -1,0 +1,46 @@
+body {
+  color: #333333;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 600px;
+  margin: 0px auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.menu a {
+  columns: #888888;
+  text-decoration: none;
+  padding-top: 20px;
+  padding-right: 15px;
+}
+
+.menu a:visited {
+  columns: #888888;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+#display-data {
+  display: none;
+}
+#display-data.hide {
+  display: none;
+}
+#display-data.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.loader {
+  display: none;
+}
+
+#weather-form .show {
+  display: block;
+}
+#weather-form .loader.hide {
+  display: hide;
+}
