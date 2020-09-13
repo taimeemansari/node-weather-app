@@ -6,6 +6,8 @@ const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
 const location = process.argv[2];
 
+const port = process.env.PORT || 3000;
+
 //setting paths
 const publicPath = path.join(__dirname, '../public');
 const viewsPath = path.join(__dirname, '../templates/views');
@@ -71,6 +73,6 @@ app.get('*', (req, res) => {
   res.send('404 page not found');
 });
 
-app.listen('3000', () => {
-  console.log('Express server started!!!');
+app.listen(port, () => {
+  console.log('Express server started!!! on' + port);
 });
