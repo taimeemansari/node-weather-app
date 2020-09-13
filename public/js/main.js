@@ -19,7 +19,7 @@ function weatherFormSubmitHandler(event) {
   if (location.value == '') {
     document.querySelector('.error').innerHTML = 'Please enter some location';
   } else {
-    const url = 'http://localhost:3000/weather?address=' + location.value;
+    const url = '/weather?address=' + location.value;
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
